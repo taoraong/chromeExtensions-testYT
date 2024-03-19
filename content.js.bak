@@ -187,10 +187,8 @@ chrome.runtime.onMessage.addListener(function(message, sender, sendResponse) {
     // อัปเดตสถานะในหน้าเว็บ
     if (isLoggedIn) {
         // เปลี่ยนสีพื้นหลังหรือข้อความตามที่คุณต้องการ
-		  localStorage.setItem('isLoggedIn', 'true');
         updateLoginStatusMessage();
     } else {
-		  localStorage.setItem('isLoggedIn', 'false');
 		updateLoginStatusMessage();
         // เปลี่ยนสีพื้นหลังหรือข้อความตามที่คุณต้องการ
         

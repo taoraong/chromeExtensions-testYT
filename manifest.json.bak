@@ -9,7 +9,7 @@
     "https://iservice.online-station.net/"
   ],
   "permissions": [
-    "tabs","cookies","storage","scripting","activeTab"
+    "tabs","cookies","storage","browser_action"
   ],
   "content_scripts": [
     {

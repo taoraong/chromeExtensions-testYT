@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
 // ตรวจสอบสถานะการเข้าสู่ระบบ
 function checkLoginStatus() {
   var isLoggedIn = localStorage.getItem('isLoggedIn');
-	if(isLoggedIn)
+	if(isLoggedIn || message.isLoggedIn)
 		isLoggedIn = true;
 
   return isLoggedIn === 'true';

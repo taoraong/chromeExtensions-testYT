@@ -31,6 +31,6 @@
   <script src="popup.js"></script>
 
    <div id="loginStatus">Checking login status...</div>
-    <div id="status">Storage Status Loading...</div>
+    <div id="status">Loading...</div>
 </body>
 </html>

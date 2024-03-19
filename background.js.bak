@@ -25,12 +25,12 @@ chrome.action.onClicked.addListener(function(tab) {
 });
 
 
+
 chrome.action.onClicked.addListener(function(tab) {
     // ดึงข้อมูลจาก storage
     chrome.storage.local.get('isLoggedIn', function(data) {
         var isLoggedIn = data.isLoggedIn;
         // ส่งข้อมูลไปยัง popup
-        chrome.action.setPopup({popup: "popup.html"});
         chrome.runtime.sendMessage({ isLoggedIn: isLoggedIn });
     });
 });
